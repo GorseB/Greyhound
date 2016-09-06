@@ -92,6 +92,7 @@ namespace Greyhound
                 Punters[2].Money = 50;
                 SetLabels();
                 Reset();
+                listBox.Items.Clear();
             }
             else if (Go.Content.ToString() == "Reset") // resets after races
             {
@@ -189,6 +190,7 @@ namespace Greyhound
 
         public void Winner(int Winner)
         {
+            listBox.Items.Add("Racer " + Winner + " was the Winner.");
             switch (Winner)
             {
                 // Simple check and then update the text so that the user knows who won
