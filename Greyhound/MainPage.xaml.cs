@@ -84,12 +84,11 @@ namespace Greyhound
         {
             if (Go.Content.ToString() == "Try Again?") // if everyone is busted and the button is clicked, the user wants to play again so reset everything
             {
-                Punters[0].Busted = false;
-                Punters[0].Money = 50;
-                Punters[1].Busted = false;
-                Punters[1].Money = 50;
-                Punters[2].Busted = false;
-                Punters[2].Money = 50;
+                foreach (Punter ThePunter in Punters)
+                {
+                    ThePunter.Busted = false;
+                    ThePunter.Money = 50;
+                }
                 SetLabels();
                 Reset();
                 listBox.Items.Clear();
@@ -222,9 +221,10 @@ namespace Greyhound
             Go.Content = "Reset";
             // let the user reset everything if they want
             Go.IsEnabled = true;
-            Punters[0].Resolve(Winner);
-            Punters[1].Resolve(Winner);
-            Punters[2].Resolve(Winner);
+            foreach (Punter ThePunter in Punters)
+            {
+                ThePunter.Resolve(Winner);
+            }
             SetLabels();
             CheckGameOver();
             // resolve all the bets and then set the labels, check if maybe everyone lost
