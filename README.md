@@ -9,7 +9,7 @@ How to Install/Use?
 2. Install on your Machine/Device
 3. Enjoy!
 
-You may need to enable developer mode on your device to install the device. 
+You may need to enable developer mode on your device to install the Game. 
 
 Refer to these articles : 
 
