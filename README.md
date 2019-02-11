@@ -5,7 +5,7 @@ Works on Windows 10 and Android Phones.
 
 How to Install/Use?
 
-1. Download the App Package from the Release
+1. Download the App Package from the Release (https://github.com/jok0436/Gambling-Game-UWP/releases/download/V1.0/Greyhound_1.0.2.0_x86_x64_arm.appxbundle)
 2. Install on your Machine/Device
 3. Enjoy!
 
